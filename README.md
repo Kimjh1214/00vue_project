@@ -1,4 +1,4 @@
-# 00vue_project
+# 01vue_projet
 
 ## Project setup
 ```

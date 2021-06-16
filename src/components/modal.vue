@@ -1,9 +1,9 @@
 <template>
   <div class="black-bg" v-if="proView==true">
     <div class="white-bg">
-      <img v-bind:src="product[proNum].image" alt="">
+      <img v-bind:src="product[proNum].image">
       <div>{{product[proNum].title}}</div>
-      <div>{{product[proNum].price.toLocaleString()}}원</div>
+      <div>{{product[proNum].price}}</div>
       <div>{{product[proNum].content}}</div>
       <button @click="$emit('modalClose')">닫기</button>
     </div>
@@ -13,7 +13,8 @@
 <script>
 export default {
     name:'modal',
-    props:['product','proView','proNum'],
+    props:['proView','product','proNum']
+
 }
 </script>
 
